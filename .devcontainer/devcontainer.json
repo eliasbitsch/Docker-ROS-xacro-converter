@@ -1,0 +1,34 @@
+{
+  "name": "ROS Noetic Dev Container",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+"runArgs": [
+  "--network=host",
+  "--env=DISPLAY=${localEnv:DISPLAY}",
+  "--env=QT_X11_NO_MITSHM=1",
+  "--volume=/tmp/.X11-unix:/tmp/.X11-unix:rw",
+  "--ipc=host"
+],
+
+
+  "workspaceMount": "source=${localWorkspaceFolder}/ros_ws,target=/root/ros_ws,type=bind",
+  "workspaceFolder": "/root/ros_ws",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-iot.vscode-ros",
+        "ms-python.python",
+        "ms-vscode.cpptools",
+        "twxs.cmake",
+        "ms-azuretools.vscode-docker"
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "ros.distro": "noetic"
+      }
+    }
+  },
+  "remoteUser": "root"
+}

@@ -1,0 +1,4 @@
+spot_ros/spot_bringup
+/home/rosdev/ros_ws/devel/.private/spot_bringup/lib/pkgconfig/spot_bringup.pc /home/rosdev/ros_ws/devel/lib/pkgconfig/spot_bringup.pc
+/home/rosdev/ros_ws/devel/.private/spot_bringup/share/spot_bringup/cmake/spot_bringupConfig.cmake /home/rosdev/ros_ws/devel/share/spot_bringup/cmake/spot_bringupConfig.cmake
+/home/rosdev/ros_ws/devel/.private/spot_bringup/share/spot_bringup/cmake/spot_bringupConfig-version.cmake /home/rosdev/ros_ws/devel/share/spot_bringup/cmake/spot_bringupConfig-version.cmake
