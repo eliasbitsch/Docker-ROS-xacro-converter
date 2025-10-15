@@ -1,5 +1,7 @@
 # Docker-ROS-xacro-converter
 
+https://github.com/user-attachments/assets/4ced1b28-7972-4a19-918d-d893e7375980
+
 Small helper container and instructions to convert ROS xacro files to URDF without a full ROS desktop install.
 
 ## Prerequisites
