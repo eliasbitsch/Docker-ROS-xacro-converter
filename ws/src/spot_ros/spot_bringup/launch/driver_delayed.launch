@@ -1,0 +1,10 @@
+<launch>
+
+  <arg name="delay"     default="$(optenv SPOT_ROS_LAUNCH_DELAY 130)" />
+
+  <node pkg="launch_delay" type="launch_delay"
+    args="$(arg delay) $(find spot_driver)/launch/driver.launch"
+    name="spot_ros_delayed" output="screen">
+  </node>
+
+</launch>
